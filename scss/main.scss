@@ -3,12 +3,13 @@
 padding: 0;
 box-sizing: border-box;
 }
+@import "estilos/header";
 
-header{
-    background-color: #f9c112;
-    .container-fluid{
-        background-color: #f9c112;
-        font-size: medium;
-    }
-    
+@import "estilos/mq";
+
+//estilos para main
+body{
+    background-color: black;
+
+
 }
