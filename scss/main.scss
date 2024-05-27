@@ -4,12 +4,41 @@ padding: 0;
 box-sizing: border-box;
 }
 @import "estilos/header";
+@import "variables/colores";
 
-@import "estilos/mq";
 
-//estilos para main
+//estilos para body
 body{
-    background-color: black;
+    background-color: $bg-color;
+   
+}
 
-
+//estilo main index
+main.index{
+        display: grid;
+        grid-template-columns: 100%; 
+        grid-template-rows: repeat (5,1fr);
+        margin: 5px;
+    section.imagen-portada{
+        
+        grid-row: 1/3;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+    }
+    
+    div.img-descripcion{
+        grid-column: 1/3;
+        grid-row: 3/4;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.texto-descripcion{
+        background-color: $bg-texto;
+        grid-column: 1/3;    
+        grid-row: 4/5;
+    }
 }
