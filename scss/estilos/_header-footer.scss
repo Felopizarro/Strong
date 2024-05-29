@@ -1,10 +1,15 @@
+
 header{
     background-color: #f4b806;
+    color: black;
+    margin: none;
     .container-fluid{
-        background-color: #f9c112;
+        background-color: #f4b806;
         font-size: medium;
+        border: black;
     }
     nav{
+        background-color: #f4b806;
         div{
             a{            
                 div{
@@ -20,6 +25,7 @@ header{
     }
 
 }
+
 
 //estilos footer
 footer {

@@ -1,0 +1,31 @@
+main.galeria{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3,33%);
+    div.fotos-galeria{
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;        
+        }
+
+        .gale-uno, .gale-dos{
+            display: none;
+        }
+            
+        .gale-tres{
+            grid-row: 1/2;
+                
+                
+        }
+        .gale-cuatro{
+            grid-row: 2/3;
+                
+        }
+            
+        .gale-cinco{
+            grid-row: 3/4;
+                
+        }            
+        }
+    }

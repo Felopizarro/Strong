@@ -1,0 +1,12 @@
+main.presentacion-comunidad{
+    display: block;
+    margin: 5px;
+    div{
+        background-color: $bg-texto;
+    }
+    .lugar-entrenamiento{
+        iframe{
+            margin: 5px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+main.planes{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    margin: 10px;
+    grid-gap: 10px;
+    div{
+        background-color: $bg-texto;
+        h2{
+            font-size: large;
+            font-weight: 500;
+
+        }
+        p{
+            grid-column: 2/5;
+        }
+        button{
+            background-color: $color-boton;
+            display: flex;
+            font-size: x-large;
+            align-items: center;
+            justify-content: center;
+            margin-left: 33%;
+        }
+    }
+}

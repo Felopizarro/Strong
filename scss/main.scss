@@ -1,149 +1,267 @@
-//reset
-*{margin: 0;
-padding: 0;
-box-sizing: border-box;
-}
+//imports html
+@import "estilos/reset";
 @import "estilos/header-footer";
-@import "variables/colores";
-@import "estilos/mq";
+@import "estilos/index";
+@import "estilos/clases";
+@import "estilos/planes";
+@import "estilos/galeria";
+@import "estilos/form-ingreso";
 
+//variables
+
+@import "variables/colores";
 
 //estilos para body
 body{
     background-color: $bg-color;
-   
+
 }
 
-//estilo main index
-main.index{
+link{
+    color: black;
+}
+
+
+//media quary
+
+@media screen and (min-width: 768px){
+    //index
+    main.index{
         display: grid;
-        grid-template-columns: 100%; 
-        grid-template-rows: repeat (5,1fr);
-        margin: 5px;
-
-    section.imagen-portada{
+        grid-template-columns: 50% 1fr ;
+        grid-template-rows: repeat (2, 1fr);
         
-        grid-row: 1/3;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        justify-content: center;
-    }
-    
-    div.img-descripcion{
-        grid-column: 1/3;
-        grid-row: 3/4;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-    
-    div.texto-descripcion{
-        background-color: $bg-texto;
-        grid-column: 1/3;    
-        grid-row: 4/5;
-    }
-}
-
-//estilos de clases
-
-main.presentacion-comunidad{
-    display: block;
-    margin: 5px;
-    div{
-        background-color: $bg-texto;
-    }
-    .lugar-entrenamiento{
-        iframe{
-            margin: 20px;
-        }
-    }
-}
-
-//estilos de planes
-
-main.planes{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2,1fr);
-    margin: 10px;
-    grid-gap: 10px;
-    div{
-        background-color: $bg-texto;
-        h2{
-            font-size: large;
-            font-weight: 500;
-
-        }
-        p{
-            grid-column: 2/5;
-        }
-        button{
-            background-color: $color-boton;
-            display: flex;
-            font-size: x-large;
-            align-items: center;
-            justify-content: center;
-            margin-left: 33%;
-        }
-    }
-}
-
-//estilos de galeria
-main.galeria{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(3,33%);
-    div.fotos-galeria{
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;        
-        }
-
-        .gale-uno, .gale-dos{
-            display: none;
-        }
-            
-        .gale-tres{
-            grid-row: 1/2;
-                
-                
-        }
-        .gale-cuatro{
+        section{
+            img{
+                grid-column: 1/2;
+                grid-row: 1/2;
+                width: 200%;
+                height: 100%;
+            }
+            }
+        div.img-descripcion{
+            grid-column: 2/3;
             grid-row: 2/3;
-                
         }
+        div.texto-descripcion{
+            grid-column: 1/2;
+            grid-row: 2/3;
             
-        .gale-cinco{
+        }
+        }
+    
+
+    //clases
+    main.presentacion-comunidad{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30% 15% 55% ;
+        margin: 10px;
+        gap: 10px;
+        img{
+            grid-column: 1/3;
+            width: 100%;
+            height: auto;
+        }
+        div.intro-clases{
+            grid-column: 1/3;
+            grid-row: 2/3;
+            object-fit: scale-down;
+        }
+        div.explicacion{
+            grid-column: 1/2;
             grid-row: 3/4;
-                
-        }            
+        }
+        div.lugar-entrenamiento{
+            grid-column: 2/3;
+            grid-row: 3/4;
+        }
+        //planes
+    main.planes{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+    }
+}
+
+    //galeria
+    main.galeria{ 
+        display: flex;
+        margin: 10px;
+        div.fotos-galeria{
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: repeat(2,1fr); 
+        .gale-uno{
+            display: block;
+            grid-column: 1/4;
+            grid-row: 1;
+            }
+        .gale-dos{
+            display: block;
+            grid-column: 1;
+            grid-row: 2   ;
+            }
+        .gale-tres{
+            display: none;}
+
+        .gale-cuatro{
+            grid-column: 2/3 ;
+            grid-row: 2/3;
+        }
+
+        .gale-cinco{
+            grid-column: 3/4 ;
+            grid-row: 2/3;
+        }    
+            }}}
+       
+    
+        
+@media screen and (min-width: 884px) {
+   //planes
+   main.planes{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: 1fr;
+    div.plan-uno{
+        grid-column: 1;
+    }
+    div.plan-dos{
+        grid-column: 2;
+    }
+   }
+
+   //formulario
+    .main.galeria{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    
+
+    .gale-uno{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        
+    }
+
+    .gale-dos{
+        grid-column: 1/2;
+        grid-row: 2/3 ;
+        width: 100%;
+        height: 400px;
+
+    }
+    .gale-tres{
+        display: grid;
+        grid-column: 2/4;
+        grid-row: 1/2 ;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .gale-cuatro{
+        grid-column: 3/4 ;
+        grid-row: 2/3;
+        width: 100%;
+        height: 400px;
+    }
+
+    .gale-cinco{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        width: 100%;
+        height: 400px;
+    }
+}
+@media screen and (min-width: 1280px){
+    //galeria
+    main.galeria{
+        div.fotos-galeria{
+            display: grid;
+            grid-template-columns: 40% 30% 30%;
+            grid-template-rows: repeat(2,45%);
+
+            img.gale-uno{
+                grid-column: 2/3;
+                grid-row: 1;
+                height: 100%;
+                width: 100%;
+            }
+
+            img.gale-dos{
+                height: 100%;
+            }
+
+            img.gale-tres{
+                display: grid;
+                grid-column: 1/2;
+                grid-row: 1;
+                height: 100%;
+
+            }
+
+            img.gale-cuatro{
+                grid-column: 3;
+                grid-row: 1/3;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            img.gale-cinco{
+                height: 100%;
+                grid-column: 2;
+            }
+        }
+
+    }
+
+    //formulario
+    main.formulario{
+        div{
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(5,auto);
+            gap: 10px;
+            h1{
+                grid-column: 1/3;
+                grid-row: 1;
+                justify-self: center;
+            }
+
+            h2{
+                grid-column: 1/3;
+                grid-row: 2;
+                justify-self: left;
+            }
+
+            label.name{
+                grid-column: 1/2;
+                grid-row: 3;
+            }
+
+            input{
+                width: 70%;
+            }
+            select{
+                width: 70%;
+            }
+            button{
+                grid-column: 1/3;
+                margin-bottom: 20px;
+               
+        
+            }
         }
     }
 
-//estilos de formulario
-main.formulario{
-    margin: 10px;
-    div{
-    background-color: $bg-texto;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    label{
-        margin: 5px;
-        input{
-            margin: 10px;
-        }
-    }
-    
-    button{
-        display: flex;
-        background-color: $color-boton;
-        justify-content: center;
-        width: 20%;
-        margin-left: 40%;
-    }
-    }
+
+
 }
+
