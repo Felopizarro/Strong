@@ -1,4 +1,20 @@
-@mixin letra ($font,$font-size,$font-family){
-    color: ;
-    font-size: ;
+@mixin parrafo{
+    font-size: larger;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+@mixin titles{
+    font-size: larger;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+@mixin headings{
+    font-size: xx-large;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
 }

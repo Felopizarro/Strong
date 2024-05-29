@@ -1,3 +1,4 @@
+@import "../variables/mixin";
 
 header{
     background-color: #f4b806;
@@ -5,8 +6,7 @@ header{
     margin: none;
     .container-fluid{
         background-color: #f4b806;
-        font-size: medium;
-        border: black;
+        @include titles
     }
     nav{
         background-color: #f4b806;

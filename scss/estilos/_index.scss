@@ -1,6 +1,7 @@
+@import "../variables/mixin";
 @import "../variables/colores";
 
-main.index{
+.index{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat (5,20%);
@@ -29,5 +30,13 @@ main.index{
         object-fit: cover ;
         width: 100%;   
         grid-row: 4/5;
+        h1{
+            @include headings
         }
+
+        p{
+            @include parrafo
+        }
+        }
+
 }   

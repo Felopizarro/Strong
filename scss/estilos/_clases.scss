@@ -1,8 +1,20 @@
+@import "../variables/mixin";
+@import "../variables/colores";
+
 main.presentacion-comunidad{
     display: block;
     margin: 5px;
     div{
         background-color: $bg-texto;
+        h1{
+            @include headings
+        }
+        li{
+            @include titles
+        }
+        p{
+            @include parrafo
+        }
     }
     .lugar-entrenamiento{
         iframe{

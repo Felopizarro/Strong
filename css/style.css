@@ -11,8 +11,10 @@ header {
 }
 header .container-fluid {
   background-color: #f4b806;
-  font-size: medium;
-  border: black;
+  font-size: larger;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
 }
 header nav {
   background-color: #f4b806;
@@ -29,30 +31,42 @@ footer {
   color: white;
 }
 
-main.index {
+.index {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat 5, 20%;
   margin: 7px 0px 7px 0px;
 }
-main.index section img {
+.index section img {
   grid-row: 1;
   grid-column: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-main.index div.img-descripcion img {
+.index div.img-descripcion img {
   grid-row: 2/3;
   grid-column: 1/2;
   width: 100%;
   height: auto;
 }
-main.index div.texto-descripcion {
+.index div.texto-descripcion {
   background-color: #f9c112;
   object-fit: cover;
   width: 100%;
   grid-row: 4/5;
+}
+.index div.texto-descripcion h1 {
+  font-size: xx-large;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.index div.texto-descripcion p {
+  font-size: larger;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 
 main.presentacion-comunidad {
@@ -61,6 +75,24 @@ main.presentacion-comunidad {
 }
 main.presentacion-comunidad div {
   background-color: #f9c112;
+}
+main.presentacion-comunidad div h1 {
+  font-size: xx-large;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+main.presentacion-comunidad div li {
+  font-size: larger;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+}
+main.presentacion-comunidad div p {
+  font-size: larger;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 main.presentacion-comunidad .lugar-entrenamiento iframe {
   margin: 5px;
@@ -77,11 +109,17 @@ main.planes div {
   background-color: #f9c112;
 }
 main.planes div h2 {
-  font-size: large;
+  font-size: xx-large;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 main.planes div p {
   grid-column: 2/5;
+  font-size: larger;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
 }
 main.planes div button {
   background-color: #f9c112;
@@ -125,7 +163,23 @@ main.formulario div {
   align-items: left;
   justify-content: left;
 }
+main.formulario div h1 {
+  font-size: xx-large;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+main.formulario div h2 {
+  font-size: larger;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
 main.formulario div label {
+  font-size: larger;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
   margin: 5px;
 }
 main.formulario div label input {
