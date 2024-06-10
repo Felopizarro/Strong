@@ -1,8 +1,10 @@
 @mixin parrafo{
     font-size: larger;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 400;
+    margin: 10px;
+    text-align: justify;
 }
 
 @mixin titles{
@@ -10,11 +12,19 @@
     color: black;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 600;
+    margin-left: 10px;
+    
 }
 
 @mixin headings{
     font-size: xx-large;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
+    margin-left: 5px;
+    text-align: center;
+}
+@mixin boton{
+    background-color: #f9c112;
+    font-size: x-large;
 }
