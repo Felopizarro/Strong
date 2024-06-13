@@ -1,7 +1,7 @@
 @import "../variables/mixin";
 @import "../variables/colores";
 
-.index{
+main.index{
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat (5,20%);

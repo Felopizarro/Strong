@@ -9,28 +9,32 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <header>
-        <!--links de navegacion-->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img src="../media/logostrong1.png" width="50px" height="50px"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                <a class="nav-link" href="clases.html">Clases</a>
-                <a class="nav-link" href="planes.html">Planes</a>
-                <a class="nav-link" href="galerias.html">Galeria</a>
-                <a class="nav-link" href="form-ingreso.html">Entrena con nosotros</a>
-              </div>
-            </div>
+  <header>
+    <!--links de navegacion-->
+    <nav class="navbar navbar-expand-lg ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img  src="../media/logostrong1.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+            <a class="nav-link" href="../pages/clases.html">Clases</a>
+            <a class="nav-link" href="../pages/planes.html">Planes</a>
+            <a class="nav-link" href="../pages/galerias.html">Galeria</a>
+            <a class="nav-link" href="../pages/form-ingreso.html">Entrena con nosotros</a>
           </div>
-        </nav>
-        </header>
+        </div>
+      </div>
+    </nav>
+  </header>
     <main class="planes">
-        <img src="../media/cover-planes.jpg"  alt="planes zona strong" width="600px" height="600px" >
+        <img src="../media/cover-planes.jpg" alt="planes zona strong" >
+        <div class="intro-planes">
+          <h1>Nuestros planes</h1>
+            <p>Te presentamos nuestros planes. Para facilitar tu decisión, puedes pedirnos la primera clase gratis en cualquier planes. ¡No lo dudes más y ven a vivir la experiencia Strong!</p>
+        </div>
         <div class="plan-uno">
             <h1> Plan básico</h1>
             <p class="descripcion-plan">Con este plan, podrás obtener acceso a:</p>
@@ -38,7 +42,13 @@
                     <p>Las clases grupales se realizan todos los lunes, miercoles y viernes a als 19:30 hrs en la plaza Buenaventura Osorio.</p>
                 <h2>Realizar seguimiento mensual de tu progreso</h2>
                     <p>Podrás tener acceso a medir tus indices corporales basicos (peso, estatura) con el fin de conocer el progreso y poder optimizar las clases en base a tus propios objetivos</p>
+                <h2>Pago mensual</h2>
+                    <p>El valor por cada mes es de CH$30.000, los cuales puedes cancelar en efectivo o via transferencia bancaria el día 28 o 29 de cada mes, previo acuerdo con el staff (Febrero: solo día 28)
+                    </p>
+                    <div class="boton-plan">
                     <button class="boton-lo-quiero" type="submit"><a href="form-ingreso.html">Lo quiero</a></button>
+                    </div>
+
             
         </div>
     
@@ -50,8 +60,14 @@
                     <p>Tendrás flexibilidad para poder entrenar en cualquier horario, incluso en los dias de entremamientos grupales. Todo podrá ser conversado con nuestro grupo de entrenadores.</p>
                 <h2>Hacer un seguimiento completo de tu progreso</h2>
                     <p>Podrás acceder a la tecnología Inbody, que permitirá conocer tu composición corporal, distribución de peso muscular y de grasa visceral, con el fin de adaptarse mejor a tus objetivos.</p>
-                    
-                <button class="boton-lo-quiero" type="submit"><a href="form-ingreso.html">Lo quiero</button></a>
+                <h2>Pago mensual o anual</h2>
+                    <p>El valor de este plan es de CH$50.000 mensuales, o... ¡Puedes pagar el valor anual con un increible descuento! Igualmente, puedes pagar en efectivo o con transferencia bancaria.</p>
+                <h2>Seguro de pago</h2>
+                    <p>Independiente del medio de pago, puedes elegir el día de pago y, desde esa fecha, tendrás un plazo de 7 días corridos para poder cancelar.</p>
+
+                    <div class="boton-plan">
+                      <button class="boton-lo-quiero" type="submit"><a href="form-ingreso.html">Lo quiero</a></button>
+                    </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

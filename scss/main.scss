@@ -20,9 +20,7 @@ body{
 
 }
 
-link{
-    color: black;
-}
+
 
 
 //media quary
@@ -118,19 +116,31 @@ link{
 @media screen and (min-width: 884px) {
    //planes
    main.planes{
-    display: grid;
-    grid-template-columns: repeat(2,50%);
-    grid-template-rows: 1fr;
-    img{
-        grid-column: 1/3;
+   display: grid;
+   grid-template-columns: repeat(2, 50%);
+   grid-template-rows: repeat(3, auto);
+     img{
+         grid-column: 1/3;
+         grid-row: 1/2;
+         }
+     .intro-planes{
+       grid-column: 1/3;
+       grid-row: 2/3;    
+         }
+      
+     div.plan-uno{
+           grid-column: 1;
+           grid-row: 3/4;
+
+
+        }
+     div.plan-dos{
+           grid-column: 2;
+           grid-row: 3/4;
+        }
+
     }
-    div.plan-uno{
-        grid-column: 1;
-    }
-    div.plan-dos{
-        grid-column: 2;
-    }
-   }
+
 
    //formulario
     .main.galeria{
@@ -218,11 +228,6 @@ link{
                 grid-column: 2;
             }
         }
-
-    }
-    //planes
-    main.planes{
-        grid-template-rows: repeat(2,auto);
 
     }
 

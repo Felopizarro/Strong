@@ -4,27 +4,9 @@
   box-sizing: border-box;
 }
 
-header {
-  background-color: #f4b806;
+body header {
+  background-color: #f9c112;
   color: black;
-  margin: none;
-}
-header .container-fluid {
-  background-color: #f4b806;
-  font-size: larger;
-  color: black;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
-  margin-left: 10px;
-}
-header nav {
-  background-color: #f4b806;
-}
-header nav div a div .nav-toggler {
-  background-color: #f4b806;
-}
-header nav div a div .nav-link {
-  background-color: #ffbf00;
 }
 
 footer {
@@ -32,13 +14,13 @@ footer {
   color: white;
 }
 
-.index {
+main.index {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: repeat 5, 20%;
   margin: 7px 0px 7px 0px;
 }
-.index section img {
+main.index section img {
   grid-row: 1;
   grid-column: 1;
   width: 100%;
@@ -46,19 +28,19 @@ footer {
   object-fit: cover;
   --animate-duration: 2s;
 }
-.index div.img-descripcion img {
+main.index div.img-descripcion img {
   grid-row: 2/3;
   grid-column: 1/2;
   width: 100%;
   height: auto;
 }
-.index div.texto-descripcion {
+main.index div.texto-descripcion {
   background-color: #f9c112;
   object-fit: cover;
   width: 100%;
   grid-row: 4/5;
 }
-.index div.texto-descripcion h1 {
+main.index div.texto-descripcion h1 {
   font-size: xx-large;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -66,7 +48,7 @@ footer {
   margin-left: 5px;
   text-align: center;
 }
-.index div.texto-descripcion p {
+main.index div.texto-descripcion p {
   font-size: larger;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -112,7 +94,7 @@ main.presentacion-comunidad .lugar-entrenamiento iframe {
 main.planes {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
   margin: 10px;
   grid-gap: 10px;
 }
@@ -121,18 +103,18 @@ main.planes img {
   grid-column: 1;
   object-fit: cover;
   width: 100%;
-  height: 100%;
 }
-main.planes div {
+
+div {
   background-color: #f9c112;
 }
-main.planes div .plan-uno {
+div .plan-uno {
   grid-row: 2;
 }
-main.planes div .plan-dos {
+div .plan-dos {
   grid-row: 3;
 }
-main.planes div h1 {
+div h1 {
   font-size: xx-large;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -140,15 +122,14 @@ main.planes div h1 {
   margin-left: 5px;
   text-align: center;
 }
-main.planes div h2 {
+div h2 {
   font-size: larger;
   color: black;
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   margin-left: 10px;
 }
-main.planes div p {
-  grid-column: 2/5;
+div p {
   font-size: larger;
   color: black;
   font-family: "Times New Roman", Times, serif;
@@ -156,13 +137,15 @@ main.planes div p {
   margin: 10px;
   text-align: justify;
 }
-main.planes div button {
+div div.boton-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div div.boton-plan button.boton-lo-quiero {
   background-color: #f9c112;
   font-size: x-large;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: 33%;
+  color: black;
 }
 
 main.galeria {
@@ -235,10 +218,6 @@ main.formulario div button {
 
 body {
   background-color: black;
-}
-
-link {
-  color: black;
 }
 
 @media screen and (min-width: 768px) {
@@ -321,16 +300,23 @@ link {
   main.planes {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(3, auto);
   }
   main.planes img {
     grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  main.planes .intro-planes {
+    grid-column: 1/3;
+    grid-row: 2/3;
   }
   main.planes div.plan-uno {
     grid-column: 1;
+    grid-row: 3/4;
   }
   main.planes div.plan-dos {
     grid-column: 2;
+    grid-row: 3/4;
   }
   .main.galeria {
     display: grid;
@@ -402,9 +388,6 @@ link {
   main.galeria div.fotos-galeria img.gale-cinco {
     height: 100%;
     grid-column: 2;
-  }
-  main.planes {
-    grid-template-rows: repeat(2, auto);
   }
   main.formulario div {
     display: grid;
