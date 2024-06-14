@@ -4,8 +4,9 @@
 main.presentacion-comunidad{
     display: block;
     margin: 5px;
-    div{
+    div.intro-clases, div.explicacion{
         background-color: $bg-texto;
+        
         h1{
             @include headings
         }
@@ -15,10 +16,6 @@ main.presentacion-comunidad{
         p{
             @include parrafo
         }
-    }
-    .lugar-entrenamiento{
-        iframe{
-            margin: 5px;
-        }
+
     }
 }

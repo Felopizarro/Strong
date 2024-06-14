@@ -4,6 +4,12 @@ body{
     header{
         background-color: $bg-texto;
         color: $link-boton;
+        a:hover{
+            background-color: $color-boton-fijo;
+        }
+        a:active{
+            background-color: $color-boton-apretado;
+        }
     }
 }
 //estilos footer

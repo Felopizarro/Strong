@@ -3,7 +3,7 @@
 
 main.formulario{
     margin: 10px;
-    div{
+    div.formulario{
     background-color: $bg-texto;
     display: flex;
     flex-direction: column;
@@ -21,14 +21,22 @@ main.formulario{
         input{
             margin: 10px;
         }
-    }
-    
-        button{
+    }}
+        div.enviar{
             display: flex;
-            background-color: $color-boton;
             justify-content: center;
-            width: 20%;
-            margin-left: 40%;
-    }
+            align-items: center;
+        button{
+            @include boton;
+        }
+        button:hover{
+            background-color: $color-boton-fijo;
+        }
+        button:active{
+            background-color: $color-boton-apretado;
+        }
+
     }
 }
+
+

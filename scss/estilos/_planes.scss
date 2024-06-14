@@ -44,7 +44,12 @@ main.planes{
             align-items: center;
             button.boton-lo-quiero{
                 @include boton;
-                               
-        }
+            }
+            button.boton-lo-quiero:hover{
+                background-color: $color-boton-fijo;
+            }
+            button.boton-lo-quiero:active{
+                background-color: $color-boton-apretado;
+            }
     }
     }
